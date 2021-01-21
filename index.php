@@ -1,9 +1,10 @@
 <?php
-include_once "./shared/header.php";
+include_once "./helps/init.php";
+include_once $shared_files . $header;
 ?>
 <div class="mousa">
-  wellcome
+  hello
 </div>
 <?php
-include_once "./shared/footer.php"
+include_once $shared_files . $footer;
 ?>
