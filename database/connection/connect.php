@@ -13,7 +13,6 @@ try {
   $con = new PDO($dsn, $user, $pass, $options);
   //set error mode and exceptions  of PDO 
   $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "connected ";
 }
 //catching error and exceptions of PDO 
 catch (PDOException $e) {
