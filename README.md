@@ -1,5 +1,5 @@
 # guestbook 
-
+### this app does not use any framework or MVC ,it's core PHP 
 ## database 
 1) **user table**: userId, username , fullname , email , password </br>
 2) **messages table** : messageId , message conntent ,userID </br>
