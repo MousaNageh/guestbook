@@ -5,7 +5,6 @@
 2) **messages table** : messageId , message conntent ,userID </br>
 3) **replies table**: replyId , reply contnet , messageId, userId </br>
 ***database connection using PDO***
-</br></br></br>
 ## app stucture 
 </br></br>
 ### 1)CSS DIR : 
