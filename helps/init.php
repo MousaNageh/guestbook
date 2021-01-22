@@ -41,6 +41,7 @@ $database_connection = "connect.php";
 
 //templetes
 $login_templete = "loginTemplete.php";
+$register_templete = "registerTemplete.php";
 
 // validations 
 $validations = "validations.php";
@@ -50,5 +51,8 @@ $sanitizers = "sanitizers.php";
 
 //query builder 
 $query_builder = "queryBuilder.php";
+
+//redirect 
+$redirect = "redirect.php";
 /*******including database connection *******/
 require_once $database . $database_connection;

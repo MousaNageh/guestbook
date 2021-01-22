@@ -1,9 +1,10 @@
 <?php
 include_once "./helps/init.php";
 include_once $shared_files . $header;
+
 ?>
 <div class="mousa">
-  hello
+  hello to index
 </div>
 <?php
 include_once $shared_files . $footer;

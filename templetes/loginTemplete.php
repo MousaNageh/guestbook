@@ -11,7 +11,7 @@
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
       <div class="form-group">
         <label for="email">email</label>
-        <input type="email" name="email" class="form-control 
+        <input type="email" id="email" name="email" required class="form-control 
         <?php
         //check if is set of email validations and if true add red border on the email feild  
         if (isset($login_validations_errors["empty_email"]) || isset($login_validations_errors["invalid_email"]))
@@ -32,7 +32,7 @@
       </div>
       <div class="form-group">
         <label for="password">password</label>
-        <input type="password" name="password" class="form-control
+        <input type="password" id="password" name="password" required class="form-control
         <?php
         //check if is set of password validations and if true add red border on the password feild  
         if (isset($login_validations_errors["empty_password"]))
@@ -46,7 +46,7 @@
       </div>
       <div class="confirm-login d-flex justify-content-between">
         <button class="btn btn-success">login</button>
-        <a href="">register</a>
+        <a href="register.php">register</a>
       </div>
     </form>
   </div>

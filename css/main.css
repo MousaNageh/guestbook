@@ -1,5 +1,13 @@
-/******login page ******/
+/**** main methods ****/
 
-login-body {
+input:focus::placeholder {
+    display: none;
+}
+
+
+/******login  and register pages ******/
+
+login-body,
+register-body {
     background-color: #f4f4f4;
 }
