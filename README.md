@@ -12,7 +12,7 @@
 contains the js files of the app 
 ### 3) helps DIR : 
   conatains some code's helping like :</br>
-  a) **init file **:  contains variables of all paths and files for app  </br>
-  b) **validation file ** : cantains validation functions for user inputs and fields  </br>
-  c) **sanitizer file **: coantains sanitization functions for user inputs for more security </br>
+  a) **init file**:  contains variables of all paths and files for app  </br>
+  b) **validation file** : cantains validation functions for user inputs and fields  </br>
+  c) **sanitizer file**: coantains sanitization functions for user inputs for more security </br>
   
