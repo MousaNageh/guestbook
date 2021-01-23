@@ -36,10 +36,11 @@ if (!isset($_SESSION["email"])) {
     //if there is no errors : check if the user exists in database 
     if (empty($login_validations_errors)) {
       //find user in database 
-      $user = select("users", ["email", "password"], "email=? and password = ?", [$email, sha1($password)]);
+      $user = select("users", ["email", "password", "userId"], "email=? and password = ?", [$email, sha1($password)]);
       //check if user is exists in database 
       if ($user) {
         $_SESSION["email"] = $email;
+        $_SESSION["userId"] = $user[0]["userId"];
         //redirect to home page 
         redirect_to("index");
         exit();

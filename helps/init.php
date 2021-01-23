@@ -42,6 +42,10 @@ $database_connection = "connect.php";
 //templetes
 $login_templete = "loginTemplete.php";
 $register_templete = "registerTemplete.php";
+$slider_templete = "sliderTemplete.php";
+$message_templete = "messageTemplete.php";
+$create_message_tempelete = "MyCreateMessageTemplete.php";
+$edit_message_tempelete = "MyEditMessageTemplete.php";
 
 // validations 
 $validations = "validations.php";

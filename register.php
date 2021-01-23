@@ -68,7 +68,9 @@ if (!isset($_SESSION["email"])) {
     if (empty($register_validations_errors)) {
       $inseted_successfully = insert("users", ["username", "fullName", "email", "password"], [$username, $full_name, $email, sha1($password)]);
       if ($inseted_successfully) {
+        $user = select("users", ["email", "userId"], "email=? and password = ?", [$email, sha1($password)]);
         $_SESSION["email"] = $email;
+        $_SESSION["userId"] = $user[0]["userId"];
         redirect_to("index");
         exit();
       } else {
