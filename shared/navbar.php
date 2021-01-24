@@ -10,8 +10,11 @@
         <li class="nav-item <?php echo  isset($index_page_active) ?  'active'  : '' ?>">
           <a class="nav-link" href="index.php">Home</a>
         </li>
-        <li class="nav-item <?php echo  isset($messages_page_active) ?  'active'  : '' ?>"">
-          <a class=" nav-link" href="messages.php">messages</a>
+        <li class="nav-item <?php echo  isset($messages_page_active) ?  'active'  : '' ?>">
+          <a class=" nav-link" href="messages.php">myMessages</a>
+        </li>
+        <li class="nav-item <?php echo  isset($all_messages_page_active) ?  'active'  : '' ?> ">
+          <a class=" nav-link" href="allmessages.php">allMessages</a>
         </li>
         <?php if (!isset($_SESSION["email"])) { ?>
         <li class="nav-item">

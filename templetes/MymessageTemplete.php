@@ -17,7 +17,9 @@
             class="btn btn-success mr-2">edit</a>
           <a href="messages.php?do=delete&messageId=<?php echo $user_msg["messageId"] ?>"
             class="btn btn-danger">delete</a>
-
+          <a href="allmessages.php?do=viewRely&messageId=<?php echo $user_msg["messageId"] ?>"
+            class="btn btn-info ml-2">
+            view replies </a>
         </div>
       </div>
       <?php }

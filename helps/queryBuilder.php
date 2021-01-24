@@ -76,3 +76,26 @@ function update($table_name, $arr_updated_clumns, $condtion, $arr_values)
   else
     return false;
 }
+
+//select from two tables 
+function select_all_from_two_tables($table_name1, $table_name2, $On)
+{
+  global $con;
+  $stmt = $con->prepare("SELECT * FROM $table_name1 JOIN $table_name2 ON $On ");
+  $stmt->execute();
+  if ($stmt->rowCount() > 0) {
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  } else
+    return false;
+}
+//select from two tables with conditon 
+function select_from_two_tables($table_name1, $table_name2, $On, $condtion, $arr_value)
+{
+  global $con;
+  $stmt = $con->prepare("SELECT * FROM $table_name1 JOIN $table_name2 ON $On WHERE $condtion ");
+  $stmt->execute($arr_value);
+  if ($stmt->rowCount() > 0) {
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  } else
+    return false;
+}
