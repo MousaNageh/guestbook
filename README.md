@@ -1,5 +1,7 @@
 # guestbook 
-### this app does not use any framework or MVC ,it's core PHP 
+### this app does not use any framework or MVC ,it's core PHP  logout
+in this app you can create messages , edit messages and delete messages
+users else can reply on your messages
 ## database 
 1) **user table**: userId, username , fullname , email , password </br>
 2) **messages table** : messageId , message conntent ,userID </br>
@@ -16,3 +18,8 @@ contains the js files of the app
   b) **validation file** : cantains validation functions for user inputs and fields  </br>
   c) **sanitizer file**: coantains sanitization functions for user inputs for more security </br>
   
+### 3)shared DIR :
+   conatains some files shered by whole app :</br>
+  a) **header**:  is HTML Header and open body tag  </br>
+  b) **footer** : is HTML footer and closed body tag </br>
+  c) **navbar**: contains app routing links </br>
