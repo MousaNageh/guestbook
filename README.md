@@ -18,8 +18,19 @@ contains the js files of the app
   b) **validation file** : cantains validation functions for user inputs and fields  </br>
   c) **sanitizer file**: coantains sanitization functions for user inputs for more security </br>
   
-### 3)shared DIR :
+### 4)shared DIR :
    conatains some files shered by whole app :</br>
   a) **header**:  is HTML Header and open body tag  </br>
   b) **footer** : is HTML footer and closed body tag </br>
   c) **navbar**: contains app routing links </br>
+
+### 4)templetes DIR :
+   conatains all application tempeletes used for bluilding the app 
+ ## pages 
+   1)**header**: user uses email and password for login </br>
+   2)**register**: user can register bt username , email , full name and password </br>
+   3)**index**: home and wellcome page of the app </br>
+   4)**messages**: displaying user messages and replies and user can create , edit , delete a message in this page else can see the replies of any message and view people
+   how made replies </br>
+   5)**all messages**: displaying all users messages and replies and user can create a reply and see all replies of any message and see creator or the message and people how replied on this message  </br>
+   
