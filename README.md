@@ -1,5 +1,5 @@
 # guestbook 
-### this app does not use any framework or MVC ,it's core PHP  logout
+### this app does not use any framework or MVC ,it's core PHP  
 in this app you can create messages , edit messages and delete messages
 users else can reply on your messages
 ## database 
